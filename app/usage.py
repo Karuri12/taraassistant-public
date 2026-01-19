@@ -77,7 +77,7 @@ class UsageTracker:
     ) -> TokenUsage:
         """Record token usage for a request."""
         usage = TokenUsage(
-            timestamp=datetime.utcnow().isoformat(),
+            timestamp=datetime.utcnow().isoformat() + "Z",
             provider=provider,
             model=model,
             input_tokens=input_tokens,
@@ -102,7 +102,7 @@ class UsageTracker:
     ) -> LLMLogEntry:
         """Record a full LLM request/response log."""
         log_entry = LLMLogEntry(
-            timestamp=datetime.utcnow().isoformat(),
+            timestamp=datetime.utcnow().isoformat() + "Z",
             provider=provider,
             model=model,
             request=request,
@@ -138,7 +138,7 @@ class UsageTracker:
     ) -> HALogEntry:
         """Record a Home Assistant API request/response."""
         log_entry = HALogEntry(
-            timestamp=datetime.utcnow().isoformat(),
+            timestamp=datetime.utcnow().isoformat() + "Z",
             method=method,
             endpoint=endpoint,
             request_data=request_data,

@@ -2618,13 +2618,13 @@ async def get_pattern_insights():
                     "entities": p.entity_ids,
                     "confidence": p.confidence,
                     "occurrence_count": p.occurrence_count,
-                    "last_seen": p.last_seen.isoformat(),
+                    "last_seen": p.last_seen.isoformat() + "Z",
                     "data": p.pattern_data,
                 }
                 for p in patterns
             ],
             "pattern_count": len(patterns),
-            "last_sync": last_sync.isoformat() if last_sync else None,
+            "last_sync": (last_sync.isoformat() + "Z") if last_sync else None,
         }
     except Exception as e:
         return {"patterns": [], "pattern_count": 0, "last_sync": None, "error": str(e)}
@@ -2751,7 +2751,7 @@ async def get_pattern_stats():
         stats = db.get_stats()
         stats["last_sync"] = db.get_last_sync_timestamp()
         if stats["last_sync"]:
-            stats["last_sync"] = stats["last_sync"].isoformat()
+            stats["last_sync"] = stats["last_sync"].isoformat() + "Z"
 
         return stats
     except Exception as e:

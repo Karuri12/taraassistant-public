@@ -1,9 +1,12 @@
 """Credential validation for AI providers and Home Assistant."""
+import logging
 from typing import List, Optional, Tuple
 
 import httpx
 
 from app.setup.models import AIProvider
+
+logger = logging.getLogger(__name__)
 
 
 class ProviderValidator:
@@ -42,11 +45,27 @@ class ProviderValidator:
                 chat_models = [
                     m["id"] for m in data.get("data", [])
                     if any(prefix in m["id"] for prefix in [
-                        "gpt-4", "gpt-3.5", "o1", "o3"
+                        "gpt-4", "gpt-3.5", "o1", "o3", "chatgpt"
                     ])
+                    and "realtime" not in m["id"]  # Exclude realtime models
+                    and "audio" not in m["id"]     # Exclude audio models
                 ]
                 # Sort with newest/best first
                 chat_models.sort(reverse=True)
+
+                # Fallback: if no models matched filter, return commonly available models
+                if not chat_models:
+                    logger.warning(
+                        f"OpenAI returned {len(data.get('data', []))} models but none matched filter. "
+                        f"Using fallback model list."
+                    )
+                    chat_models = [
+                        "gpt-4o",
+                        "gpt-4o-mini", 
+                        "gpt-4-turbo",
+                        "gpt-4",
+                        "gpt-3.5-turbo"
+                    ]
 
                 return True, chat_models, None
 
